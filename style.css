@@ -1,40 +1,65 @@
 body {
-  font-family: Arial, sans-serif;
-  text-align: center;
   margin: 0;
-  padding: 20px;
-  background: #f4f4f4;
+  font-family: Arial, sans-serif;
 }
 
-#main {
-  max-width: 900px;
-  margin: 0 auto;
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 220px;
+  height: 100vh;
+  background-color: #1b1b32;
+  color: white;
+  overflow-y: auto;
+  padding-top: 10px;
 }
 
-#img-div {
-  background: white;
-  padding: 15px;
-}
-
-#image {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin: 0 auto;
-}
-
-#img-caption {
-  margin-top: 10px;
-  font-style: italic;
-}
-
-#tribute-info {
-  margin: 20px 0;
-  line-height: 1.6;
-}
-
-#tribute-link {
-  color: blue;
-  text-decoration: none;
+#navbar header {
+  font-size: 1.3rem;
   font-weight: bold;
+  padding: 15px;
+  color: #f1be32;
+}
+
+.nav-link {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+
+.nav-link:hover {
+  background-color: #2a2a4a;
+}
+
+#main-doc {
+  margin-left: 240px;
+  padding: 20px 40px;
+  max-width: 700px;
+}
+
+.main-section header {
+  font-size: 1.5rem;
+  border-bottom: 2px solid #f1be32;
+  padding-bottom: 5px;
+}
+
+code {
+  background-color: #eee;
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+
+@media (max-width: 768px) {
+  #navbar {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+  #main-doc {
+    margin-left: 0;
+    padding: 20px;
+  }
 }
