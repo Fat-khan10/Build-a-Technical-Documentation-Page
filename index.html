@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Flexbox Documentation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav id="navbar">
+    <header>CSS Flexbox Guide</header>
+    <a class="nav-link" href="#Introduction">Introduction</a>
+    <a class="nav-link" href="#Flex_Container">Flex Container</a>
+    <a class="nav-link" href="#Flex_Items">Flex Items</a>
+    <a class="nav-link" href="#Justify_Content">Justify Content</a>
+    <a class="nav-link" href="#Align_Items">Align Items</a>
+    <a class="nav-link" href="#Flex_Wrap">Flex Wrap</a>
+  </nav>
+
+  <main id="main-doc">
+
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <p>Flexbox is a one-dimensional layout method in CSS designed to arrange items in rows or columns within a container.</p>
+      <p>It makes it easier to design flexible responsive layout structures without using float or positioning.</p>
+      <p>To use flexbox, you simply set the <code>display</code> property of a container element to <code>flex</code>.</p>
+      <code>display: flex;</code>
+    </section>
+
+    <section class="main-section" id="Flex_Container">
+      <header>Flex Container</header>
+      <p>The flex container is the parent element on which <code>display: flex</code> is applied.</p>
+      <p>All direct children of a flex container automatically become flex items.</p>
+      <p>The flex container establishes a new flex formatting context for its contents.</p>
+      <ul>
+        <li>Set with <code>display: flex</code> or <code>display: inline-flex</code></li>
+        <li>Controls the main axis with <code>flex-direction</code></li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Flex_Items">
+      <header>Flex Items</header>
+      <p>Flex items are the direct children of a flex container.</p>
+      <p>Each flex item can grow, shrink, or maintain its size based on the available space in the container.</p>
+      <p>Individual flex items can be controlled using the <code>flex-grow</code>, <code>flex-shrink</code>, and <code>flex-basis</code> properties.</p>
+      <ul>
+        <li>Can use the <code>order</code> property to change display order</li>
+        <li>Can use <code>align-self</code> to override container alignment</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Justify_Content">
+      <header>Justify Content</header>
+      <p>The <code>justify-content</code> property aligns flex items along the main axis of the container.</p>
+      <p>Common values include <code>flex-start</code>, <code>flex-end</code>, <code>center</code>, <code>space-between</code>, and <code>space-around</code>.</p>
+      <p>This property is essential for controlling horizontal spacing when the flex direction is set to row.</p>
+      <ul>
+        <li><code>center</code> centers items along the main axis</li>
+        <li><code>space-between</code> distributes items evenly with no leading or trailing space</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Align_Items">
+      <header>Align Items</header>
+      <p>The <code>align-items</code> property aligns flex items along the cross axis of the container.</p>
+      <p>This is especially useful for vertically centering content when the flex direction is set to row.</p>
+      <p>Common values include <code>stretch</code>, <code>flex-start</code>, <code>flex-end</code>, and <code>center</code>.</p>
+    </section>
+
+    <section class="main-section" id="Flex_Wrap">
+      <header>Flex Wrap</header>
+      <p>The <code>flex-wrap</code> property controls whether flex items are forced onto a single line or can wrap onto multiple lines.</p>
+      <p>By default, flex items will all try to fit onto one line, which can cause them to shrink.</p>
+      <p>Setting <code>flex-wrap: wrap</code> allows items to flow onto new lines as needed.</p>
+      <ul>
+        <li><code>nowrap</code> is the default value</li>
+        <li><code>wrap-reverse</code> wraps items in reverse order</li>
+      </ul>
+    </section>
+
+  </main>
+
+</body>
+</html>
